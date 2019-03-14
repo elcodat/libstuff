@@ -1,0 +1,40 @@
+Adapted from https://docs.scipy.org/doc/numpy/dev/gitwash/development_workflow.html
+
+ENH Enhancement
+    Add a new feature (function, method, class, module), but also stuff like
+    substantial speed improvements or refactoring work.
+
+BUG Bug Fix
+
+DOC Documentation change
+
+TST tests
+
+API API change
+    User-facing API change (rm function/method/module/class, change call
+    signature or important defaults). In general things that may break user
+    code.
+
+BEH Behavioral change
+    Changes that are not API changes (e.g. add a warning, add a side effect
+    like writing a file, change less important defaults such as compiler
+    optimization flags). Things that won't break code in the sense that a
+    function has a new name or doesn't exist, but may have changed (better)
+    defaults, for instance.
+
+REL Release-related
+    World-facing release-related changes (setup.py, versions, pip, packaging,
+    dependencies).
+
+BLD Build system
+    Internal build-related (setup.py, compilers, extensions).
+
+MNT Maintenance
+    This is the new preferred replacement for INT ("internal change"). Any
+    internal change such as refactoring, style, cleanup.
+
+INT Internal change
+    Deprecated, use MNT.
+
+STY Style change
+    Deprecated, use MNT. pep8-ish style fixes.

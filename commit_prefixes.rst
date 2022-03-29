@@ -1,4 +1,4 @@
-Suggested (git) commit message prefixes. Inspired by `scipy's docs <scipy_>`_.
+Suggested (git) commit message prefixes. Inspired by `numpy's dev docs <numpy_>`_.
 
 ENH Enhancement
     Add a new feature (function, method, class, module), but also stuff like
@@ -41,4 +41,4 @@ STY Style change
 INT Internal change
     Deprecated, use MNT.
 
-.. _scipy: https://docs.scipy.org/doc/numpy/dev/gitwash/development_workflow.html
+.. _numpy: https://numpy.org/devdocs/dev/development_workflow.html#writing-the-commit-message

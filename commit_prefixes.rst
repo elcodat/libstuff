@@ -1,8 +1,8 @@
 Suggested (git) commit message prefixes. Inspired by `numpy's dev docs <numpy_>`_.
 
 ENH Enhancement
-    Add a new feature (function, method, class, module), but also stuff like
-    substantial speed improvements or refactoring work.
+    Add a new feature (function, method, class, module) that doesn't break the
+    existing API. Also non-API improvements like substantial speed gains.
 
 BUG Bug Fix
     Changes that fix a bug, but don't break APIs.
@@ -24,21 +24,18 @@ BEH Behavioral change a.k.a. "soft" API change
     optimization flags). Things that won't break user code.
 
 REL Release-related
-    World-facing release-related changes (setup.py, versions, pip, packaging,
-    dependencies).
+    World-facing release-related changes (setup.py, versions, packaging,
+    new or removed dependencies).
 
 BLD Build system
-    Internal build-related (setup.py, compilers, extensions).
+    Internal build-related changes (setup.py, compilers, extensions, code
+    checkers and linters).
 
 MNT Maintenance
-    This is the new preferred replacement for INT ("internal change"). Any
-    internal change such as refactoring, style or cleanup that is neither API
+    Any internal change such as refactoring, style or cleanup that is neither API
     nor BEH.
 
 STY Style change
     pep8-ish style fixes. Use this or MNT.
-
-INT Internal change
-    Deprecated, use MNT.
 
 .. _numpy: https://numpy.org/devdocs/dev/development_workflow.html#writing-the-commit-message
